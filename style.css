@@ -110,7 +110,7 @@ ul, li {
     margin-bottom: 8px;
 }
 
-.preparation li::before, .ingredients li::before {
+.preparation li::before {
     display: inline-block;
     content: " ";
     background-color: var(--dark-raspberry);
@@ -147,13 +147,31 @@ ul, li {
     font-family: var(--outfit);
 }
 
-.instructions li::before {
-    display: inline-block;
-    content: counter(mynum) ". ";
-    counter-increment: mynum;
-    font-weight: 400;
+.ingredients li{
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-left: 5px;
+}
+
+.ingredients li::marker {
+    color: var(--nutmeg);    
+}
+    
+
+.instructions li {
+    list-style: decimal;
+    list-style-position: outside;
+    margin-left: 20px;
+}
+
+.instructions li::marker {
+    
     color: var(--dark-raspberry);
-    margin: 0 25px 0 6px;
+}
+
+.instructions li strong {
+    font-weight: 600;
+    color: var(--dark-charcoal);
 }
 
 .nutrition {
@@ -162,33 +180,32 @@ ul, li {
     align-items: flex-start;
 }
 
-.nutrition p {
+.nutrition > p {
     font-family: var(--outfit);
     font-size: 0.875rem;
     margin-bottom: 10px;
 }
 
 .nutrition-item {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
     width: 100%;
 }
 
-.item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5px 0;
+.item td{
+    height: 32px;
+    margin: auto;
     border-bottom: 1px solid var(--light-grey);
 }
 
-.item:last-of-type {
-    border-bottom: none;
-}
+/* .item td p:last-child {
+    border-bottom: none; */
+/* } */
 
-.item p {
-    margin-left: 30px;
+.item td p {
+    font-family: var(--outfit);
+    margin-left: 10px;
 }
 
 .item span {
