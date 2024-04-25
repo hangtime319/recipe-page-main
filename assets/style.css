@@ -187,9 +187,6 @@ ul, li {
 }
 
 .nutrition-item {
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column; */
     width: 100%;
 }
 
@@ -199,9 +196,6 @@ ul, li {
     border-bottom: 1px solid var(--light-grey);
 }
 
-/* .item td p:last-child {
-    border-bottom: none; */
-/* } */
 
 .item td p {
     font-family: var(--outfit);
