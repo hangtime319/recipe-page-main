@@ -23,6 +23,10 @@ body {
     counter-reset: mynum;
 }
 
+p, li {
+    color: var(--wenge-brown);
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -159,7 +163,7 @@ ul, li {
     
 
 .instructions li {
-    list-style: decimal;
+    list-style: auto;
     list-style-position: outside;
     margin-left: 20px;
 }
@@ -182,27 +186,31 @@ ul, li {
 
 .nutrition > p {
     font-family: var(--outfit);
+    color: var(--wenge-brown);
     font-size: 0.875rem;
     margin-bottom: 10px;
 }
 
-.nutrition-item {
+table {
     width: 100%;
+    border-collapse: collapse;
 }
 
-.item td{
-    height: 32px;
-    margin: auto;
+.item {
     border-bottom: 1px solid var(--light-grey);
 }
 
+td {
+    height: 32px;
+    margin: auto;
+}    
 
-.item td p {
+.item p, tr p {
     font-family: var(--outfit);
     margin-left: 10px;
 }
 
-.item span {
+.td-color {
     font-family: var(--outfit);
     font-weight: 500;
     color: var(--nutmeg);
